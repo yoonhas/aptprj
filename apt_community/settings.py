@@ -25,7 +25,7 @@ SECRET_KEY = 'qp(par!!vfip2h(kuey#66qcv-&@zs0$9olqf48_syuv1bes#)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kangproject.pythonanywhere.com', '127.0.0.1' ]
 
 
 # Application definition

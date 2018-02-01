@@ -7,9 +7,9 @@ class Apartment(models.Model):
 
 
 class Category(models.Model):
-    Username = models.ForeignKey('auth.User')
-    Apartment_Name = models.ForeignKey('Apartment')
-    Board_Kind = models.ForeignKey('Category')
+    Username = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    Apartment_Name = models.ForeignKey('Apartment', on_delete=models.CASCADE)
+    Board_Kind = models.ForeignKey('Category', on_delete=models.CASCADE)
 
 class Image(models.Model):
     Picture = models.ImageField(upload_to='pictures/%Y/%m/%d')
